@@ -1,9 +1,13 @@
 # 🛒 ElectroZone – Simple E-Commerce Website
-A mini e-commerce electronics store built using HTML, CSS, JavaScript, and Bootstrap.  
+
+A mini **e-commerce electronics store** built using **HTML, CSS, JavaScript, and Bootstrap**.  
 Users can add products, search, add to cart, remove items, and checkout with a success message.  
+
 ## 🚀 Live Demo
-👉 ElectroZone Website
+👉 [ElectroZone Website](https://adithya27adi.github.io/ecommerce-electrozone/)
+
 ---
+
 ## ✨ Features
 - Add new products dynamically  
 - Search products in real-time  
@@ -11,13 +15,16 @@ Users can add products, search, add to cart, remove items, and checkout with a s
 - View cart in a modal  
 - Remove items from cart  
 - Checkout with confirmation message  
-- Cart saved using localStorage  
+- Cart saved using **localStorage**  
+
 ---
+
 ## 🛠️ Tech Stack
-- HTML5 – Structure  
-- CSS3 / Bootstrap 5 – Styling and layout  
-- JavaScript (ES6) – Logic and interactivity  
-- LocalStorage – Save cart items  
+- **HTML5** – Structure  
+- **CSS3 / Bootstrap 5** – Styling and layout  
+- **JavaScript (ES6)** – Logic and interactivity  
+- **LocalStorage** – Save cart items
+
 ---
 ## 📂 Project Structure
 ecommerce-electrozone/
