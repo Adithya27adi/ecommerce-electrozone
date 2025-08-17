@@ -1,0 +1,14 @@
+ .product-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-card { 
+      min-height: 400px; 
+    }
+    .no-items { 
+      display: none; 
+    }
+    .modal-body ul {
+      max-height: 300px;
+      overflow-y: auto;
+    }

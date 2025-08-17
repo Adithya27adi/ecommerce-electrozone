@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="ecom.css">
+<body>
+<div class="container py-4">
+  <h1 class="text-center mb-4">📱 ElectroZone</h1>
+
+  <!-- Product Input Form -->
+  <div class="card p-4 mb-4 shadow">
+    <h5>Add Product</h5>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <input id="newProductName" type="text" class="form-control" placeholder="Product Name">
+      </div>
+      <div class="col-md-4">
+        <input id="newProductImage" type="text" class="form-control" placeholder="Image URL">
+      </div>
+      <div class="col-md-2">
+        <input id="newProductPrice" type="number" class="form-control" placeholder="Price">
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary w-100" onclick="addNewProduct()">Add Product</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <input id="searchBar" type="text" class="form-control mb-4" placeholder="🔍 Search products...">
+
+  <!-- Product List -->
+  <div id="productList" class="row g-4"></div>
+  <p id="noResults" class="text-center text-danger no-items">No matching items found.</p>
+</div>
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">🛒 Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="cartItems" class="list-group"></ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" onclick="checkout()">Checkout</button>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cart Button -->
+<button class="btn btn-warning position-fixed shadow" style="top: 10px; right: 10px; z-index: 1000;" data-bs-toggle="modal" data-bs-target="#cartModal">
+  🛍️ Cart (<span id="cartCount">0</span>)
+</button>
+
+
+</script>
+<script src="ecom.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
